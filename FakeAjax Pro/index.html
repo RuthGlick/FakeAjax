@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="spa.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  logIn  -->
+    <div id="logIn" class="page active">
+        <h1>Log In</h1>
+        <form action="" onsubmit='logIn(event)'>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required><br>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+
+            <button type="submit">connect</button>
+        </form>
+        <ul>
+            <li><a href="#" data-target="signUp" class="navLink">sign-up</a></li>
+            <li><a href="#" data-target="logInPrinciple" class="navLink">log-in-as-principle</a></li>
+        </ul>
+    </div>
+    <!--  signUp  -->
+    <div id="signUp" class="page">
+        <h1>Sign Up</h1>
+        <form action="" onsubmit="signUp(event)">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="name" required><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="courses@gmail.com" name="email" required><br>
+
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="0551111111" name="phone" required><br>
+
+            <label for="adress"><b>Adress</b></label>
+            <input type="text" placeholder="street" name="adress" required><br>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="passwordReapet" required><br>
+
+            <button type="submit" >connect</button>
+        </form>
+        <ul>
+            <li><a href="#" data-target="logIn" class="navLink">log-in</a></li>
+            <li><a href="#" data-target="logInPrinciple" class="navLink">log-in-as-principle</a></li>
+        </ul>
+    </div>
+
+    <!--  logInPrinciple  -->
+    <div id="logInPrinciple" class="page ">
+        <h1>HELLO MANAGER</h1>
+        <form action="" onsubmit="logInPrinciple(event)">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter email" name="email" required><br>
+
+            <button type="submit" >connect</button>
+        </form>
+        <ul>
+            <li><a href="#" data-target="signUp" class="navLink">sign-up</a></li>
+            <li><a href="#" data-target="logIn" class="navLink">log-in</a></li>
+        </ul>
+    </div>
+
+    <!--  application  -->
+    <div id="application" class="page">
+
+        <p id="current"><b>Hello Family: </b></p>
+        <p>Your options:</p>
+        <div id="contacts">
+            <button id="familyCourses" onclick="getChildren()">show me my children courses</button><br>
+            <button id="childCourses" onclick="getCourseOfKid()">show me courses of one child</button><br>
+            <button id="feeMonth" onclick="getMyFee()">show me how much I pay for month</button><br>
+            <button id="addChild" onclick="creatChild()">add a new <b>child</b></button><br>
+            <button id="addCourse" onclick="newCourse()">add a new <B>course</B></button><br>
+            <button id="delete" onclick="deleteCourse()">take out a child from a course</button><br>
+
+            <div id="ans"></div>
+
+        </div>
+        <a href="#" data-target="logOut" class="navLink" id="out" onclick="logOut()">log-out</a>
+    </div>
+
+
+    <!--  applicationPrinciple  -->
+    <div id="applicationPrinciple" class="page">
+        <p ><b>Hello Manager</b></p>
+        <div id="contacts">
+            <button id="families" onclick="listFamily()">list families</button><br>
+            <button id="feeFamilies" onclick="listfeeFamilies()">list fee of families</button><br>
+            <button id="sumForMonth" onclick="monthSum()">sum for month</button><br>
+        </div>
+        <div id="ansManager"></div>
+        <a href="#" data-target="logOut" class="navLink" id="out" onclick="logOut()">log-out</a>
+    </div>
+    <script src="spa.js"></script>
+    <script src="DB API.js"></script>
+    <script src="rest API.js"></script>
+    <script src="FAJAX.js"></script>
+    <script src="clientFamily.js"></script>
+    <script src="register.js"></script>
+    <script src="clientAdmenister.js"></script>
+</body>
+
+
+</html>

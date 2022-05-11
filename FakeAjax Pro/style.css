@@ -1,0 +1,77 @@
+html { 
+  background: url("top-view-various-brushes-with-color-palette.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(119, 119, 119);
+    /* background: linear-gradient(rgb(224, 224, 224), rgb(247, 171, 194)); */
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin: 15%; */
+    margin-left: 30%;
+    margin-right: 30%;
+    overflow: hidden;
+	background-attachment: fixed;
+    font-family: cursive;
+    text-decoration: none;
+}
+button{
+    height:50px;
+    margin:3px;
+    width: 200px;
+}
+.childButton{
+    background:lightcoral;
+}
+#ans{
+    background: rgba(236, 229, 229, 0.609);
+}
+.navLinK{
+    text-decoration: none;
+    color: black;
+    background: rgba(236, 229, 229, 0.609);
+    
+}
+#out{
+    margin: 0px;
+    text-decoration: none;
+}
+/* input{
+    margin:3px;
+    padding: 3px;
+} */
+
+.table-td{
+    margin:5px;
+    padding: 5px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.conect{
+     background-color: aliceblue;
+       border-bottom: 2px  red;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  background-color: rgba(236, 229, 229, 0);
+}
+
